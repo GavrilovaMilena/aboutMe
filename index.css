@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    position: relative;
+}
+page {
+    margin: 0 50px;
 }
 
 header {
@@ -105,12 +109,12 @@ a {
 }
 
 .technology-text-p {
-    background: #3a38377d;
-    color: #ffff;
+    background: #00000017;
     padding: 22px;
     border-radius: 10px;
     margin-bottom: 15px;
     transition: 0.5s ease;
+    color: #000;
 }
 
 .technology-text-p:last-child {
@@ -120,8 +124,9 @@ a {
 .technology-text-p:hover {
     padding: 24px;
     font-size: 18px;
-    background: #3a383796;
+    background: #3a38377d;
     transition: 0.5s ease;
+    color: #ffff;
 }
 
 .about {
@@ -193,14 +198,16 @@ a {
 }
 
 .card-wrapper {
+    color: #000;
     background-color: #00000017;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
 }
 
 .card-wrapper:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #3a38377d;
     transition: 0.5s ease-in-out;
+    color: #fff;
 }
 
 .card-img {
@@ -210,7 +217,6 @@ a {
 }
 
 .card-text {
-    color: #000;
     font-size: 20px;
     text-align: center;
     padding: 10px;
@@ -225,6 +231,10 @@ a {
     display: flex;
 }
 
+.connection-img {
+    width: 50px;
+}
+
 .icon-container {
     padding: 0 50px 0 0;
     display: flex;
@@ -235,4 +245,26 @@ a {
     font-size: 20px;
     display: flex;
     align-items: center;
+}
+
+.arrow-button {
+    display: none;
+    background-color: #00000017;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.arrow-button:hover {
+    background-color: #3a38377d;
+    transition: 0.5s ease-in-out;
+}
+
+.arrow {
+    transform: rotate(180deg);
+    width: 30px;
+    padding: 15px;
 }

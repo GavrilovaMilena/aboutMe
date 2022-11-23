@@ -42,10 +42,12 @@ p {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header-wrapper {
     padding: 19%;
+    cursor: default;
 }
 
 .navigation {
@@ -76,6 +78,7 @@ a {
 
 .technology {
     padding: 50px 150px 0;
+    height: 400px;
 }
 
 .title-text {
@@ -175,4 +178,40 @@ a {
 
 .portfolio {
     padding: 50px 150px 0;
+}
+
+.portfolio-wrapper {
+    padding: 50px 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    width: 500px;
+    padding: 0 20px 20px 0;
+}
+
+.card-wrapper {
+    background-color: #00000017;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+}
+
+.card-img {
+    width: 500px;
+    height: 235px;
+    border-radius: 20px;
+}
+
+.card-text {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
 }

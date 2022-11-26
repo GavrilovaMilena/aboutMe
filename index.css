@@ -91,6 +91,12 @@ a {
     border-bottom: 1px #838383 solid;
     padding-bottom: 15px;
     cursor: default;
+    opacity: 0;
+}
+
+.title-text.element-show {
+    opacity: 1;
+    transition: all 1.5s;
 }
 
 .technology-wrapper {
@@ -144,6 +150,8 @@ a {
 
 .about-img-block {
     width: 50%;
+    display: flex;
+    justify-content: end;
 }
 
 .about-img {
@@ -153,6 +161,9 @@ a {
 
 .about-text-block {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .name {
@@ -278,6 +289,17 @@ a {
     transform: rotate(180deg);
     width: 30px;
     padding: 15px;
+}
+
+.square-one {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    z-index: -1;
+    top: 980px;
+    animation: rotation 20s linear infinite;
+    background-color: #f5eda4;
+    border-radius: 20px;
 }
 
 .square {

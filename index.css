@@ -322,3 +322,35 @@ a {
         transform:rotate(360deg);
     }
 }
+
+.pulse {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 50px auto;
+    background: #5ce3d0;
+    box-shadow: 0 0 0 hwb(172deg 36% 11% / 50%);
+    animation: pulse 2s infinite;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pulse:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 hwb(172deg 36% 11% / 50%);
+        box-shadow: 0 0 0 0 hwb(172deg 0% 0% / 0%);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px hwb(172deg 36% 11% / 50%);
+        box-shadow: 0 0 0 25px hwb(172deg 50% 0% / 48%);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 hwb(172deg 36% 11% / 50%);
+        box-shadow: 0 0 0 0 hwb(172deg 0% 0% / 55%);
+    }
+}

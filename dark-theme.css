@@ -1,9 +1,11 @@
-/* LIGHT THEM */
+/* DARK THEM */
 
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     position: relative;
+    background: #363636;
+    color: #ffffff;
 }
 page {
     margin: 0 50px;
@@ -251,15 +253,15 @@ a {
 
 .card-wrapper {
     color: #000;
-    background-color: #00000017;
+    background-color: #ffffff99;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
 }
 
 .card-wrapper:hover {
-    background-color: #3a38377d;
+    background-color: #ffffff;
     transition: 0.5s ease-in-out;
-    color: #fff;
+    color: #000;
 }
 
 .card-img {
@@ -293,7 +295,7 @@ a {
 }
 
 .icon-text {
-    color: #000;
+    color: #ffffff99;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -301,13 +303,13 @@ a {
 }
 
 .icon-text:hover {
-    color: #0000009e;
+    color: #ffffff;
     transition: 0.5s ease-in-out;
 }
 
 .arrow-button {
     display: none;
-    background-color: #00000017;
+    background-color: #ffffff99;
     border-radius: 50%;
     border: none;
     transition: 0.5s ease-in-out;
@@ -335,7 +337,7 @@ a {
     z-index: -1;
     top: 980px;
     animation: rotation 20s linear infinite;
-    background-color: #f5eda4;
+    background-color: #666666;
     border-radius: 20px;
 }
 
@@ -347,7 +349,7 @@ a {
     right: 170px;
     bottom: 170px;
     animation: rotation 20s linear infinite;
-    background-color: #f5eda4;
+    background-color: #666666;
     border-radius: 20px;
 }
 

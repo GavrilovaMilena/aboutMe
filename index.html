@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" id="light-theme">
     <title>Milena Gavrilova</title>
 </head>
 <body>
 <header>
+    <div class="theme-wrapper">
+        <img class="light" src="images/light_mode.svg" alt="sun"/>
+        <div class="theme"
+             onclick="((this.className==='theme')?this.className='theme_active':this.className='theme')"></div>
+        <img class="dark" src="images/dark_mode.svg" alt="moon"/>
+    </div>
     <div class="header-wrapper">
         <h1>Милена Гаврилова</h1>
         <h2>портфолио</h2>
@@ -97,7 +103,10 @@
         </div>
     </div>
 </div>
-<div class="pulse"></div>
+<div onmousedown="viewDiv()" class="pulse"></div>
+<div class="i-can" id="i-can">
+    <div style="background-color: #ff95d7;">ffdkjndfjdfhldfjhkdlkcnfkdf;kcnlcfknflkdljdihjdrhdkdkjdkhjdkhjhd</div>
+</div>
 <div class="connection" id="connection">
     <p class="title-text">Связь со мной</p>
     <div class="connection-wrapper">

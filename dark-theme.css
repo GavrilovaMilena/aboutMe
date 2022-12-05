@@ -54,7 +54,8 @@ a {
 }
 
 .theme-wrapper {
-    position: absolute;
+    z-index: 2;
+    position: fixed;
     right: 10px;
     top: 10px;
     display: flex;
@@ -96,10 +97,14 @@ a {
 .navigation {
     width: 100%;
     height: 50px;
-    background-color: #3a3837b3;
+    background-color: #484848;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px 0;
 }
 
 .navigation-a {
@@ -127,15 +132,17 @@ a {
 
 .title-text {
     font-size: 22px;
-    border-bottom: 1px #838383 solid;
+    border-bottom: 1px #ffffff solid;
     padding-bottom: 15px;
     cursor: default;
     opacity: 0;
+    transform: translateX(-50px);
 }
 
 .title-text.element-show {
     opacity: 1;
     transition: all 1.5s;
+    transform: translateX(0);
 }
 
 .technology-wrapper {

@@ -1,3 +1,4 @@
+// Appearance of text when scrolling the page
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
@@ -15,7 +16,6 @@ for (let elm of elements) {
 
 // Scroll up button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
@@ -29,7 +29,8 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-// Add button
+
+// Add a change theme button
 const btn = document.querySelector('.theme');
 // Choosing a style sheet
 const theme = document.querySelector("#light-theme");
@@ -46,6 +47,7 @@ btn.addEventListener("click", function() {
     }
 });
 
+
 // function viewDiv(){
 //     document.getElementById("i-can").style.display = "block";
-// };
+// }

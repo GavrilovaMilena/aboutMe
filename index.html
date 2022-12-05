@@ -7,23 +7,23 @@
 </head>
 <body>
 <header>
-    <div class="theme-wrapper">
-        <img class="light" src="images/light_mode.svg" alt="sun"/>
-        <div class="theme"
-             onclick="((this.className==='theme')?this.className='theme_active':this.className='theme')"></div>
-        <img class="dark" src="images/dark_mode.svg" alt="moon"/>
-    </div>
     <div class="header-wrapper">
         <h1>Милена Гаврилова</h1>
         <h2>портфолио</h2>
     </div>
-    <div class="navigation">
-        <a class="navigation-a" href="#technology">Технологии</a>
-        <a class="navigation-a" href="#about">Обо мне</a>
-        <a class="navigation-a" href="#portfolio">Портфолио</a>
-        <a class="navigation-a" href="#connection">Связь со мной</a>
-    </div>
 </header>
+<div class="theme-wrapper">
+    <img class="light" src="images/light_mode.svg" alt="sun"/>
+    <div class="theme"
+         onclick="((this.className==='theme')?this.className='theme_active':this.className='theme')"></div>
+    <img class="dark" src="images/dark_mode.svg" alt="moon"/>
+</div>
+<div class="navigation">
+    <a class="navigation-a" href="#technology">Технологии</a>
+    <a class="navigation-a" href="#about">Обо мне</a>
+    <a class="navigation-a" href="#portfolio">Портфолио</a>
+    <a class="navigation-a" href="#connection">Связь со мной</a>
+</div>
 <div class="technology" id="technology">
     <p class="title-text">Технологии</p>
     <div class="technology-wrapper">
@@ -105,7 +105,7 @@
 </div>
 <div onmousedown="viewDiv()" class="pulse"></div>
 <div class="i-can" id="i-can">
-    <div style="background-color: #ff95d7;">ffdkjndfjdfhldfjhkdlkcnfkdf;kcnlcfknflkdljdihjdrhdkdkjdkhjdkhjhd</div>
+    <div class="i-can-block">Grid Layout</div>
 </div>
 <div class="connection" id="connection">
     <p class="title-text">Связь со мной</p>

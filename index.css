@@ -55,8 +55,8 @@ a {
 .theme-wrapper {
     z-index: 2;
     position: fixed;
-    right: 10px;
-    top: 10px;
+    right: 30px;
+    top: 20px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -76,12 +76,12 @@ a {
     width: 50px;
     height: 50px;
     border: 0;
-    background-image: url("images/toggle_off.svg");
+    background-image: url("images/dark_mode.svg");
     transition: 1s ease-in-out;
 }
 
 .theme_active {
-    background-image: url("images/toggle_on.svg");
+    background-image: url("images/light_mode.svg");
     width: 50px;
     height: 50px;
     border: 0;

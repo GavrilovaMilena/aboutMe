@@ -32,7 +32,7 @@ function topFunction() {
 
 // Add a change theme button
 const btn = document.querySelector('.theme');
-// Choosing a style sheet
+// Выбор таблицы стилей
 const theme = document.querySelector("#light-theme");
 // Отслеживаем щелчок по кнопке
 btn.addEventListener("click", function() {

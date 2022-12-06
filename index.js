@@ -48,6 +48,7 @@ btn.forEach(button => {
         applyTheme(theme);
     });
 });
+
 function applyTheme(themeName) {
     // Помещаем путь к файлу темы в пустой link в head
     document.querySelector('[title="theme"]').setAttribute('href', `${themeName}-theme.css`);
@@ -59,6 +60,7 @@ function applyTheme(themeName) {
     document.querySelector(`[data-theme="${themeName}"]`).style.display = 'none';
     localStorage.setItem('theme', themeName);
 }
+
 // Проверяем есть ли в LocalStorage записано значение для 'theme' и присваиваем его переменной.
 let activeTheme = localStorage.getItem('theme');
 // Если значение не записано, или оно равно 'light' - применяем светлую тему

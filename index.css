@@ -56,7 +56,7 @@ a {
     z-index: 2;
     position: fixed;
     right: 30px;
-    top: 20px;
+    top: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;

@@ -76,17 +76,17 @@ a {
     width: 50px;
     height: 50px;
     border: 0;
-    background-image: url("images/dark_mode.svg");
+    /*background-image: url("images/dark_mode.svg");*/
     transition: 1s ease-in-out;
 }
 
-.theme_active {
-    background-image: url("images/light_mode.svg");
-    width: 50px;
-    height: 50px;
-    border: 0;
-    transition: 1s ease-in-out;
-}
+/*.theme_active {*/
+/*    background-image: url("images/light_mode.svg");*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    border: 0;*/
+/*    transition: 1s ease-in-out;*/
+/*}*/
 
 .header-wrapper {
     padding: 19%;
@@ -405,4 +405,5 @@ a {
 .i-can-block {
     background-color: #ff95d7;
     font-size: 22px;
+    padding: 15px;
 }

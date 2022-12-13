@@ -72,27 +72,10 @@ if (activeTheme === null || activeTheme === 'light') {
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-
-// // Add a change theme button
-// const btn = document.querySelector('.theme');
-// // Выбор таблицы стилей
-// const theme = document.querySelector("#light-theme");
-// // Отслеживаем щелчок по кнопке
-// btn.addEventListener("click", function () {
-//     // If the current address contains "light-theme.css"
-//     if (theme.getAttribute("href") === "light-theme.css") {
-//         // ...then we switch to "dark-theme.css"
-//         theme.href = "dark-theme.css";
-//         localStorage.setItem("myKey", JSON.stringify(theme));
-//         // Otherwise…
-//     } else {
-//         // …switch to "light-theme.css"
-//         theme.href = "light-theme.css";
-//         localStorage.setItem("myKey", JSON.stringify(theme));
-//     }
-// });
-
-
 function viewDiv() {
     document.getElementById("i-can").style.display = "block";
 }
+
+// function viewDivICan() {
+//     document.getElementById("flex").style.display = "block";
+// }

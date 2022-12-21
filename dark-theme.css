@@ -455,20 +455,41 @@ a {
     cursor: pointer;
 }
 
-.grid-block-wrapper {
+.poop-p {
+    border-radius: 10px 10px 0 0;
+    width: 160px;
+    background-color: #838383;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.grid-wrapper {
     width: 100%;
     height: 100%;
     background-color: #ebebeb;
     border-radius: 0 10px 10px;
 }
 
-.flex-block-wrapper {
+.flex-wrapper {
     width: 100%;
     height: 100%;
     background-color: #b6b6b6;
+    border-radius: 0 10px 10px;
 }
 
-#flex {
+.poop-p-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #838383;
+    border-radius: 0 10px 10px;
+}
+
+.block {
     display: none;
-    z-index: 1;
+}
+
+.show {
+    width: 100%;
+    height: 100%;
+    display: flex;
 }

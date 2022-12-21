@@ -70,12 +70,25 @@ if (activeTheme === null || activeTheme === 'light') {
 } else if (activeTheme === 'dark') {
     applyTheme('dark');
 }
+
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 function viewDiv() {
     document.getElementById("i-can").style.display = "block";
 }
 
-// function viewDivICan() {
-//     document.getElementById("flex").style.display = "block";
-// }
+
+//Используйте делегирование событий для прослушивания событий с кнопок
+$(document).on('click', '.active-button', handleClick)
+
+function handleClick() {
+
+    //Возьмите идентификатор с кнопки
+    const id = $(this).data('id');
+
+    //Удалите все классы `show` из элементов
+    $('.block').removeClass('show');
+
+    //А затем добавьте этот класс обратно в элемент, соответствующий идентификатору.
+    $(`.block[data-id=${id}]`).addClass('show');
+}

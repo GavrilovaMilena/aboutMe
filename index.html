@@ -112,12 +112,13 @@
 <div class="i-can" id="i-can">
     <div class="i-can-block">
         <div class="title-wrapper">
-            <p class="grid-block-p">Grid Layout</p>
-            <p class="flex-block-p">Flex Layout</p>
-<!--            onmousedown="viewDivICan()"-->
+            <p class="grid-block-p active-button" data-id="1">Grid Layout</p>
+            <p class="flex-block-p active-button" data-id="2">Flex Layout</p>
+            <p class="poop-p active-button" data-id="3">???????????</p>
         </div>
-            <div class="grid-block-wrapper">content</div>
-            <div class="flex-block-wrapper" id="flex">content</div>
+        <div class="grid-wrapper block" data-id="1">content</div>
+        <div class="flex-wrapper block" data-id="2">content</div>
+        <div class="poop-p-wrapper block" data-id="3">content</div>
     </div>
 </div>
 <div class="connection" id="connection">
@@ -145,6 +146,7 @@
 <button class="arrow-button" onclick="topFunction()" id="myBtn" title="Go to top">
     <img class="arrow" src="images/arrow.svg" alt="arrow"/>
 </button>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
